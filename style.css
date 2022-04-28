@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(253, 247, 247);
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.container {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#header img {
+  height: 100px;
+  width: 100px;
+}
+
+#header h1 {
+  color: #161b22;
+  font-family: inherit;
+  text-align: center;
+  padding: 0;
+  margin: 0.5rem;
+}
+.userform {
+  width: 100%;
+  max-width: 700px;
+}
+
+.userform input {
+  width: 100%;
+  display: block;
+  background-color: #161b22;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 1rem;
+  outline: none;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.userform input::placeholder {
+  color: #bbb;
+}
+
+.card {
+  max-width: 800px;
+  border-radius: 20px;
+  background-color: #161b22;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  margin: 0 1rem;
+}
+
+h3 {
+  color: red;
+}
+.avatar {
+  border-radius: 50%;
+  border: 3px solid #6daffc;
+  width: 150px;
+  height: 150px;
+}
+
+.user-info {
+  color: #eee;
+  margin-left: 1.5rem;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.user-info h4 {
+  margin-top: 1rem;
+}
+.user-info ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin-top: 0.3rem;
+  list-style: none;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+}
+
+.user-info ul li strong {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.repo {
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+  background-color: #6daffc;
+  font-size: 0.7rem;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+#main-footer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  
+}
+
+.footertext{
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+  }
+
+  .userform {
+    max-width: 400px;
+  }
+}
